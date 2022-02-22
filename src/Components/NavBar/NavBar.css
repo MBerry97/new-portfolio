@@ -1,0 +1,16 @@
+.navBar-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}

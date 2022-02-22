@@ -1,17 +1,33 @@
 import Hamburger from 'hamburger-react';
 
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import './NavBar.css';
 
 function NavBar() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const items = ['About', 'Project', 'Contact'];
+  const items = ['About', 'Projects', 'Contact'];
 
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
-    </div>
+    <header>
+      <nav className="navBar-container">
+        <span className="logo">Logo</span>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+        {isOpen && (
+          <div>
+            {items.map((item) => {
+              return (
+                <Link to={item} smooth>
+                  {item}
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </nav>
+    </header>
   );
 }
 
