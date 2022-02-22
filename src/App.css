@@ -2,6 +2,7 @@ body {
   width: 100%;
   margin: 0;
   background-color: #ececec;
+  transition: background 1.5s;
 }
 
 body.dark-mode {

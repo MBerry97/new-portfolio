@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import DarkModeToggle from 'react-dark-mode-toggle';
 
 export default function ThemeMode() {
   const [themeState, setThemeState] = useState(false);
@@ -21,10 +22,10 @@ export default function ThemeMode() {
   }, [themeState]);
 
   return (
-    <div>
-      <button type="button" onClick={() => setThemeState(!themeState)}>
-        {themeState ? 'Light Mode' : 'Dark Mode'}
-      </button>
-    </div>
+    <DarkModeToggle
+      checked={themeState}
+      onChange={() => setThemeState(!themeState)}
+      size={60}
+    />
   );
 }

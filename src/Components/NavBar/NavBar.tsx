@@ -1,4 +1,5 @@
 import Hamburger from 'hamburger-react';
+import ThemeMode from 'Hooks/ThemeMode';
 
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
@@ -14,6 +15,7 @@ function NavBar() {
     <header>
       <nav className="navBar-container">
         <span className="logo">Logo</span>
+        <ThemeMode />
         <Hamburger toggled={isOpen} toggle={setOpen} />
         {isOpen && (
           <div>
