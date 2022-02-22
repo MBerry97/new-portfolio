@@ -6,8 +6,15 @@ module.exports = {
       {
         singleQuote: true,
         semi: true,
-        trailingComma: 'none'
-      }
-    ]
-  }
+        trailingComma: 'none',
+      },
+    ],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
+    },
+  },
 };

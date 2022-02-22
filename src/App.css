@@ -71,3 +71,8 @@ span,
 p {
   font-family: Lato;
 }
+
+.placeholder-container {
+  border: 2px solid #b6b3b3;
+  height: 50vh;
+}
