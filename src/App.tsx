@@ -1,12 +1,14 @@
 import React from 'react';
 
 import './App.css';
+import ThemeMode from './Hooks/ThemeMode';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <ThemeMode />
+        <p className="p-test">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a

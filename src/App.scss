@@ -1,15 +1,17 @@
+@import './Styles/styles.scss';
+
 body {
   width: 100%;
   margin: 0;
-  background-color: #ececec;
+  background-color: $light-bg-grey;
 }
 
 body.dark-mode {
-  background-color: #535353;
-}
+  background-color: $dark-bg-grey;
 
-body.dark-mode .p-test {
-  color: aqua;
+  .p-test {
+    color: aqua;
+  }
 }
 
 .App {
@@ -30,15 +32,12 @@ body.dark-mode .p-test {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: Mulish, sans-serif;
 }
-
 img {
   display: block;
   max-width: 100%;
