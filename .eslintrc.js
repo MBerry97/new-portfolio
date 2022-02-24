@@ -9,6 +9,7 @@ module.exports = {
         trailingComma: 'none',
       },
     ],
+    'react/function-component-definition': 'off',
   },
   settings: {
     'import/resolver': {

@@ -1,0 +1,10 @@
+@import './variables';
+
+@mixin dark-mode($dark-mode) {
+  @if $dark-mode {
+    color: white;
+  } @else {
+    color: black;
+  }
+  transition: color 1s;
+}

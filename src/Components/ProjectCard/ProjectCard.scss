@@ -1,0 +1,39 @@
+@import '../../Styles/styles.scss';
+
+.projectCard {
+  // border: 1px solid black;
+  margin-bottom: 2rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  overflow: hidden;
+}
+
+.projectCard-inner__div {
+  padding: 1.6rem;
+
+  > h1 {
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: $mobile-heading;
+    font-weight: 800;
+    color: $primary-blue;
+    letter-spacing: -1.5px;
+  }
+
+  > p {
+    font-size: $mobile-paragraph;
+    line-height: 2rem;
+    @include dark-mode(false);
+  }
+
+  > div {
+    display: flex;
+  }
+}
+
+body.dark-mode {
+  .projectCard-inner__div {
+    > p {
+      @include dark-mode(true);
+    }
+  }
+}

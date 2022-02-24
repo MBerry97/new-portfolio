@@ -1,0 +1,37 @@
+@import '../../Styles/styles.scss';
+
+.button-action,
+.button-info {
+  background-color: transparent;
+  @include dark-mode(false);
+  font-size: $mobile-paragraph;
+  padding: 0.8rem 0.8rem;
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.button-info {
+  border: 1px solid $primary-blue;
+
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
+.button-action {
+  border-bottom: 0.3rem solid $primary-blue;
+  display: flex;
+  align-items: center;
+
+  font-weight: 800;
+
+  > img {
+    margin-right: 0.8rem;
+  }
+}
+
+body.dark-mode {
+  .button-info,
+  .button-action {
+    @include dark-mode(true);
+  }
+}

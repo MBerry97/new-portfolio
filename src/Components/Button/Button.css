@@ -1,0 +1,33 @@
+.button-action,
+.button-info {
+  background-color: transparent;
+  color: black;
+  transition: color 1s;
+  font-size: 1.4rem;
+  padding: 0.8rem 0.8rem;
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.button-info {
+  border: 1px solid #5784f9;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
+.button-action {
+  border-bottom: 0.3rem solid #5784f9;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.button-action > img {
+  margin-right: 0.8rem;
+}
+
+body.dark-mode .button-info,
+body.dark-mode .button-action {
+  color: white;
+  transition: color 1s;
+}

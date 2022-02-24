@@ -1,0 +1,34 @@
+.projectCard {
+  margin-bottom: 2rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  overflow: hidden;
+}
+
+.projectCard-inner__div {
+  padding: 1.6rem;
+}
+
+.projectCard-inner__div > h1 {
+  margin: 0rem 0rem 1rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #5784f9;
+  letter-spacing: -1.5px;
+}
+
+.projectCard-inner__div > p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: black;
+  transition: color 1s;
+}
+
+.projectCard-inner__div > div {
+  display: flex;
+}
+
+body.dark-mode .projectCard-inner__div > p {
+  color: white;
+  transition: color 1s;
+}
