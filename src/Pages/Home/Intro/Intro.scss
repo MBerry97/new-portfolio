@@ -3,4 +3,8 @@
 .intro-container {
   border: 1px solid green;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
 }
