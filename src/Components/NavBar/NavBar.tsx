@@ -14,7 +14,9 @@ function NavBar() {
   return (
     <header>
       <nav className="navBar-container">
-        <span className="logo">Logo</span>
+        <Link className="logo" to="Home" smooth>
+          Logo
+        </Link>
         <ThemeMode />
         <Hamburger toggled={isOpen} toggle={setOpen} />
         {isOpen && (
