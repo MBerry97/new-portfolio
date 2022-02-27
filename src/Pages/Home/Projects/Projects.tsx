@@ -9,7 +9,7 @@ import bgImg from 'Assets/bgs/yellow-bg.svg';
 const Projects = () => {
   return (
     <section className="projects-container-outer" id="Projects">
-      <PageTitle text="Projects" />
+      <PageTitle text="💻 Projects" />
       <img src={bgImg} alt="background blob" />
       <div className="projects-container-inner">
         <ProjectCard

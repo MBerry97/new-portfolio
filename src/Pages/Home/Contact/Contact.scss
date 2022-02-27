@@ -1,0 +1,94 @@
+@import '../../../Styles/styles.scss';
+
+.contact-container-outer {
+  // min-height: 50vh;
+  // border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#contact-hand {
+  position: absolute;
+  top: -4rem;
+  right: 0rem;
+}
+
+.contact-form-container {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  padding: 1.6rem 0.8rem;
+
+  input,
+  textarea {
+    min-width: 100%;
+    margin: 1rem 0rem 2rem 0rem;
+    outline: 1px solid #e8ecf4;
+    min-height: 3rem;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    font-family: $Lato;
+    font-size: $mobile-paragraph;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid $primary-blue;
+  }
+
+  text-area {
+    min-height: 9rem;
+  }
+
+  label {
+    font-size: $mobile-paragraph;
+    font-weight: 500;
+    @include dark-mode(false);
+  }
+
+  button {
+    margin: 0rem 0rem 0rem auto;
+  }
+}
+
+#footer-blob {
+  min-width: 100%;
+}
+
+body.dark-mode {
+  .contact-form-container {
+    label {
+      @include dark-mode(true);
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact-hand {
+    min-width: 33rem;
+    position: absolute;
+    top: -32rem;
+    right: 0rem;
+  }
+
+  .contact-form-container {
+    max-width: 60rem;
+
+    label {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  #contact-hand {
+    min-width: 48rem;
+    position: absolute;
+    top: -45rem;
+    right: 0rem;
+  }
+}

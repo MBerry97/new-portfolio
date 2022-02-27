@@ -2,7 +2,7 @@
 
 .pageTitle {
   font-size: $mobile-heading;
-  margin: 1rem 0rem 4rem 0rem;
+  margin: 4rem 0rem 8rem 0rem;
   border-bottom: 4px solid $primary-blue;
   min-height: 5rem;
   @include dark-mode(false);
@@ -11,5 +11,12 @@
 body.dark-mode {
   .pageTitle {
     @include dark-mode(true);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .pageTitle {
+    font-size: $desktop-sub-heading;
+    min-height: 6.5rem;
   }
 }
