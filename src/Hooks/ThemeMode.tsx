@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useContext } from 'react';
 import DarkModeToggle from 'react-dark-mode-toggle';
+import { homeContext } from 'Contexts/Home.context';
 
 export default function ThemeMode() {
-  const [themeState, setThemeState] = useState(false);
+  const { themeState, setThemeState } = useContext(homeContext);
 
   useEffect(() => {
     const getTheme = localStorage.getItem('Theme');

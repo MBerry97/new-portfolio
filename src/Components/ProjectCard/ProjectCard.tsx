@@ -1,8 +1,8 @@
 import Button from 'Components/Button/Button';
 import React from 'react';
 import './ProjectCard.css';
-import codeSnippetImg from 'Assets/icons/code-snippet.svg';
-import checkImg from 'Assets/icons/check.svg';
+import Code from 'Components/Icons/Code';
+import Checkmark from 'Components/Icons/Checkmark';
 
 type Props = {
   img: string;
@@ -22,8 +22,8 @@ const ProjectCard = ({ img, buttonText, projectDesc }: Props) => {
         {renderInfoButtons()}
         <p>{projectDesc}</p>
         <div>
-          <Button type="action" text="Code" img={codeSnippetImg} />
-          <Button type="action" text="Demo" img={checkImg} />
+          <Button type="action" text="Code" img={<Code />} />
+          <Button type="action" text="Demo" img={<Checkmark />} />
         </div>
       </div>
     </section>

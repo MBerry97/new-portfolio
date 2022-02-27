@@ -1,17 +1,20 @@
-import React from 'react';
+import { Provider } from 'Contexts/Home.context';
+import React, { useState } from 'react';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
 
 function Home() {
+  const [themeState, setThemeState] = useState(false);
+
   return (
-    <>
+    <Provider value={{ themeState, setThemeState }}>
       <Intro />
       <About />
       <Projects />
       <Contact />
-    </>
+    </Provider>
   );
 }
 
