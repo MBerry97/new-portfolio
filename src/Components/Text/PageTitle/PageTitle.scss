@@ -1,0 +1,15 @@
+@import '../../../Styles/styles.scss';
+
+.pageTitle {
+  font-size: $mobile-heading;
+  margin: 1rem 0rem 4rem 0rem;
+  border-bottom: 4px solid $primary-blue;
+  min-height: 5rem;
+  @include dark-mode(false);
+}
+
+body.dark-mode {
+  .pageTitle {
+    @include dark-mode(true);
+  }
+}

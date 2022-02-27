@@ -1,7 +1,12 @@
 import React from 'react';
+import './PageTitle.css';
 
-const PageTitle = () => {
-  return <div>PageTitle</div>;
+type Props = {
+  text: string;
+};
+
+const PageTitle = ({ text }: Props) => {
+  return <h1 className="pageTitle">{text}</h1>;
 };
 
 export default PageTitle;

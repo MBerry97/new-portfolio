@@ -3,6 +3,12 @@
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
   overflow: hidden;
+  max-width: 40rem;
+}
+
+.projectCard > img {
+  max-height: 20.5rem;
+  min-width: 100%;
 }
 
 .projectCard-inner__div {

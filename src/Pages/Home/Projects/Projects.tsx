@@ -3,12 +3,15 @@ import React from 'react';
 import './Projects.css';
 import shortlyUrlImg from 'Assets/projects/url-desktop-preview.png';
 import sneakerImg from 'Assets/projects/product-desktop-preview.jpg';
+import PageTitle from 'Components/Text/PageTitle/PageTitle';
+import bgImg from 'Assets/bgs/yellow-bg.svg';
 
 const Projects = () => {
   return (
     <section className="projects-container-outer" id="Projects">
+      <PageTitle text="Projects" />
+      <img src={bgImg} alt="background blob" />
       <div className="projects-container-inner">
-        Projects
         <ProjectCard
           img={shortlyUrlImg}
           buttonText={['React', 'HTML', 'CSS', 'Git']}

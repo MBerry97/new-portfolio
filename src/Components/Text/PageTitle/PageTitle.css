@@ -1,1 +1,13 @@
-/* No CSS */
+.pageTitle {
+  font-size: 2.4rem;
+  margin: 1rem 0rem 4rem 0rem;
+  border-bottom: 4px solid #5784f9;
+  min-height: 5rem;
+  color: black;
+  transition: color 1s;
+}
+
+body.dark-mode .pageTitle {
+  color: white;
+  transition: color 1s;
+}
