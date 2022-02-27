@@ -8,13 +8,18 @@
   padding: 0.8rem 0.8rem;
   margin-right: 0.4rem;
   display: inline-block;
+  transition: 0.35s ease;
 }
 
 .button-info {
   border: 1px solid $primary-blue;
-
   font-weight: 600;
   border-radius: 0.4rem;
+}
+
+.button-info:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 3px 3px 10px -5px black;
 }
 
 .button-action {
@@ -29,9 +34,20 @@
   }
 }
 
+.button-action:hover,
+.button-action:focus {
+  box-shadow: inset 0 -3.25em 0 0 $primary-blue;
+}
+
 body.dark-mode {
   .button-info,
   .button-action {
     @include dark-mode(true);
+    transition: 0.35s ease;
+  }
+
+  .button-info:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 3px 3px 10px -5px white;
   }
 }
