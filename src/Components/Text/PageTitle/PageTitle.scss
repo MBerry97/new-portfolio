@@ -6,6 +6,7 @@
   border-bottom: 4px solid $primary-blue;
   min-height: 5rem;
   @include dark-mode(false);
+  z-index: 1;
 }
 
 body.dark-mode {

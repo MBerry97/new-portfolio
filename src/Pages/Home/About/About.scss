@@ -1,0 +1,100 @@
+@import '../../../Styles/styles.scss';
+
+.about-container-outer {
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  > img {
+    position: absolute;
+    max-width: 18rem;
+    right: 0;
+    top: 5rem;
+  }
+}
+
+.about-container-inner {
+  border: 1px solid blue;
+  max-width: 40rem;
+  padding: 1.6rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    font-weight: 400;
+    font-size: $mobile-paragraph;
+    margin: 0.5rem 0rem;
+    @include dark-mode(false);
+  }
+
+  > span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: $Mulish;
+    margin: 0.5rem 0rem;
+  }
+
+  > span:first-of-type {
+    @include dark-mode(false);
+  }
+
+  > span:last-of-type,
+  #about-name__span {
+    color: $primary-blue;
+  }
+  #about-name__span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  > img {
+    margin: 1rem 0rem;
+  }
+}
+
+.about-skills__div {
+  padding: 0rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    font-weight: 700;
+    font-family: $Mulish;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > button {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+body.dark-mode {
+  .about-container-inner {
+    > p {
+      @include dark-mode(true);
+    }
+
+    > span:first-of-type {
+      @include dark-mode(true);
+    }
+  }
+
+  .about-skills__div {
+    > span {
+      @include dark-mode(true);
+    }
+  }
+}

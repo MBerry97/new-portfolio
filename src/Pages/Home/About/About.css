@@ -1,0 +1,97 @@
+.about-container-outer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.about-container-outer > img {
+  position: absolute;
+  max-width: 18rem;
+  right: 0;
+  top: 5rem;
+}
+
+.about-container-inner {
+  border: 1px solid blue;
+  max-width: 40rem;
+  padding: 1.6rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container-inner > p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0.5rem 0rem;
+  color: black;
+  transition: color 1s;
+}
+
+.about-container-inner > span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  margin: 0.5rem 0rem;
+}
+
+.about-container-inner > span:first-of-type {
+  color: black;
+  transition: color 1s;
+}
+
+.about-container-inner > span:last-of-type,
+.about-container-inner #about-name__span {
+  color: #5784f9;
+}
+
+.about-container-inner #about-name__span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.about-container-inner > img {
+  margin: 1rem 0rem;
+}
+
+.about-skills__div {
+  padding: 0rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-skills__div > span {
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-skills__div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-skills__div > div > button {
+  margin-bottom: 0.4rem;
+}
+
+body.dark-mode .about-container-inner > p {
+  color: white;
+  transition: color 1s;
+}
+
+body.dark-mode .about-container-inner > span:first-of-type {
+  color: white;
+  transition: color 1s;
+}
+
+body.dark-mode .about-skills__div > span {
+  color: white;
+  transition: color 1s;
+}
