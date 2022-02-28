@@ -27,7 +27,7 @@ function About() {
   return (
     <section className="about-container-outer" id="About">
       <img src={aboutBgHand} alt="waving hand" />
-      <PageTitle text="About" />
+      <PageTitle text="🧑🏻 About" />
       <div className="about-container-inner">
         <span>Nice to meet you,</span>
         <span id="about-name__span">I am Matt Berry</span>
