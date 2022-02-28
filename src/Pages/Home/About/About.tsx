@@ -1,7 +1,7 @@
 import PageTitle from 'Components/Text/PageTitle/PageTitle';
 import React from 'react';
 import './About.css';
-import aboutImg from 'Assets/me/IMG_5419.jpg';
+import aboutImg from 'Assets/me/me-about.jpg';
 import Button from 'Components/Button/Button';
 import aboutBgHand from 'Assets/bgs/about-hand-bg.png';
 
