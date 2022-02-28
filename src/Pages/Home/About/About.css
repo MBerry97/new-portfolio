@@ -1,5 +1,4 @@
 .about-container-outer {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +14,6 @@
 }
 
 .about-container-inner {
-  border: 1px solid blue;
   max-width: 40rem;
   padding: 1.6rem 3.8rem;
   display: flex;
@@ -28,6 +26,7 @@
   margin: 0.5rem 0rem;
   color: black;
   transition: color 1s;
+  line-height: 2.2rem;
 }
 
 .about-container-inner > span {
@@ -50,17 +49,19 @@
 .about-container-inner #about-name__span {
   font-size: 1.8rem;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
 }
 
 .about-container-inner > img {
   margin: 1rem 0rem;
+  filter: brightness(110%);
 }
 
 .about-skills__div {
   padding: 0rem 3.8rem;
   display: flex;
   flex-direction: column;
+  max-width: 40rem;
 }
 
 .about-skills__div > span {
@@ -69,6 +70,8 @@
   font-size: 1.6rem;
   letter-spacing: -0.1rem;
   margin-bottom: 1.5rem;
+  color: black;
+  transition: color 1s;
 }
 
 .about-skills__div > div {
@@ -94,4 +97,91 @@ body.dark-mode .about-container-inner > span:first-of-type {
 body.dark-mode .about-skills__div > span {
   color: white;
   transition: color 1s;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-container-outer {
+    padding: 0rem 5% 0rem 5%;
+  }
+  .about-container-outer > img {
+    position: absolute;
+    max-width: 36rem;
+    right: 0;
+    top: 15rem;
+  }
+  .about-container-inner {
+    align-self: flex-start;
+    max-width: 80rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'img text';
+  }
+  .about-container-inner > img {
+    max-width: 30rem;
+    grid-area: img;
+  }
+  .about-container-inner > * {
+    grid-area: text;
+  }
+  .about-container-inner > span:first-of-type {
+    margin: 12rem 0rem 0rem 0rem;
+  }
+  .about-container-inner #about-name__span {
+    margin: 15rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > p:first-of-type {
+    margin: 18.5rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > span:nth-of-type(3) {
+    margin: 24rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > p:last-of-type {
+    margin: 27rem 0rem 0rem 0rem;
+  }
+  .about-skills__div {
+    align-self: flex-start;
+    max-width: none;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-container-outer {
+    padding: 0rem 10% 20rem 10%;
+  }
+  .about-container-outer > img {
+    position: absolute;
+    max-width: 48rem;
+    right: 0;
+    top: 10rem;
+  }
+  .about-container-inner {
+    grid-template-columns: 47% 53%;
+    max-width: 88rem;
+  }
+  .about-container-inner > img {
+    max-width: 35rem;
+  }
+  .about-container-inner > span:first-of-type {
+    font-size: 2.4rem;
+    margin: 10rem 0rem 0rem 0rem;
+  }
+  .about-container-inner #about-name__span {
+    font-size: 2.6rem;
+    margin: 14rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > p:first-of-type {
+    font-size: 1.6rem;
+    margin: 18.5rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > span:nth-of-type(3) {
+    font-size: 2.4rem;
+    margin: 24rem 0rem 0rem 0rem;
+  }
+  .about-container-inner > p:last-of-type {
+    font-size: 1.6rem;
+    margin: 28rem 0rem 0rem 0rem;
+  }
 }
