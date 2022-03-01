@@ -19,6 +19,7 @@
   // border: 1px solid red;
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 40rem;
   padding: 1.6rem 0.8rem;
 
@@ -76,7 +77,7 @@ body.dark-mode {
   }
 
   .contact-form-container {
-    max-width: 60rem;
+    min-width: 60rem;
 
     label {
       font-size: 1.8rem;

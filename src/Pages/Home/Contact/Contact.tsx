@@ -6,6 +6,7 @@ import React from 'react';
 import './Contact.css';
 import footerBgBlob from 'Assets/bgs/footer-blob-bg.svg';
 import handMobileImg from 'Assets/bgs/contact-hand-mobile.svg';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Contact() {
   return (
@@ -14,20 +15,28 @@ function Contact() {
       <PageTitle text="💬 Lets talk..." />
       <div className="contact-form-container">
         <form>
-          <label htmlFor="name">
-            Name
-            <input type="text" id="name" />
-          </label>
-          <label htmlFor="email">
-            Email
-            <input type="text" id="email" />
-          </label>
-          <label htmlFor="message">
-            Message
-            <textarea id="message" />
-          </label>
+          <ScrollAnimation animateIn="fadeIn" duration={1} delay={300}>
+            <label htmlFor="name">
+              Name
+              <input type="text" id="name" />
+            </label>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" duration={1} delay={500}>
+            <label htmlFor="email">
+              Email
+              <input type="text" id="email" />
+            </label>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" duration={1} delay={700}>
+            <label htmlFor="message">
+              Message
+              <textarea id="message" />
+            </label>
+          </ScrollAnimation>
 
-          <Button type="action" text="Send" img={<Send />} />
+          <ScrollAnimation animateIn="fadeIn" duration={1} delay={900}>
+            <Button type="action" text="Send" img={<Send />} />
+          </ScrollAnimation>
         </form>
       </div>
       <img id="footer-blob" src={footerBgBlob} alt="footer blob background" />

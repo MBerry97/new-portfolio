@@ -16,7 +16,7 @@ const ProjectCard = ({ img, buttonText, projectDesc }: Props) => {
     return buttonText.map((text) => <Button type="info" text={text} />);
   };
   return (
-    <ScrollAnimation className="projectCard" animateIn="fadeInUp">
+    <ScrollAnimation className="projectCard" animateIn="fadeIn" duration={1.5}>
       <img src={img} alt="project preview" />
       <div className="projectCard-inner__div">
         <h1>Shortly URL landing page</h1>
