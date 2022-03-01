@@ -3,7 +3,7 @@ import NavBar from 'Components/NavBar/NavBar';
 import React from 'react';
 import './Intro.css';
 import introBgImg from 'Assets/bgs/intro-blob-bg.svg';
-import meIntro from 'Assets/me/me-home.jpg';
+import meIntro from 'Assets/me/hello_undraw.svg';
 import underLine from 'Assets/bgs/Line 1.svg';
 import linkedInImg from 'Assets/icons/linkedin.svg';
 import githubImg from 'Assets/icons/github.svg';
