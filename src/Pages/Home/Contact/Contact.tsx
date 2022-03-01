@@ -34,7 +34,12 @@ function Contact() {
             </label>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeIn" duration={1} delay={900}>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={1}
+            delay={900}
+            offset={50}
+          >
             <Button type="action" text="Send" img={<Send />} />
           </ScrollAnimation>
         </form>
