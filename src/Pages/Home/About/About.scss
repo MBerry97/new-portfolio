@@ -9,6 +9,10 @@
   text-align: center;
   position: relative;
 
+  > h1 {
+    margin: 0rem 0rem 8rem 0rem !important;
+  }
+
   > img {
     position: absolute;
     max-width: 18rem;

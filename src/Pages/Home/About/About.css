@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.about-container-outer > h1 {
+  margin: 0rem 0rem 8rem 0rem !important;
+}
+
 .about-container-outer > img {
   position: absolute;
   max-width: 18rem;

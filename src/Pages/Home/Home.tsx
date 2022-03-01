@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <Provider value={{ themeState, setThemeState }}>
-      <NavBar />
+      <NavBar themeState={themeState} />
       <Intro />
       <About />
       <Projects />

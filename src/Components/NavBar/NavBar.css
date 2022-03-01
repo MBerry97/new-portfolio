@@ -7,13 +7,47 @@
   position: fixed;
   z-index: 2;
   background-color: transparent;
-  box-shadow: 0.5px 0.5px 4px 0px #e7e5e5;
+  min-height: 8.2rem;
+  transition: backGround 1.5s;
+}
+
+.navBar-container > div {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  background-color: red;
-  display: inline-block;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
+  margin-right: 2.8rem;
+}
+
+.nav-item--desktop,
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: black;
+  transition: color 1s;
+}
+
+.nav-item--desktop {
+  margin-left: 2.8rem;
+}
+
+body.dark-mode .nav-item--desktop,
+body.dark-mode .logo {
+  color: white;
+  transition: color 1s;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navBar-container {
+    padding: 1.6rem calc(5% + 3.8rem);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navBar-container {
+    padding: 1.6rem calc(10% + 3.8rem);
+  }
 }
