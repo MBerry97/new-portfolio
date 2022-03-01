@@ -26,7 +26,7 @@ function NavBar({ themeState }: Props) {
   const renderNavItems = (build: 'desktop' | 'mobile') => {
     return items.map((item) => {
       return (
-        <Link to={item} smooth className={`nav-item--${build}`}>
+        <Link to={item} smooth className={`nav-item--${build}`} offset={-82}>
           {item}
         </Link>
       );
