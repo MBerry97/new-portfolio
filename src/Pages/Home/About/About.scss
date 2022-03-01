@@ -8,6 +8,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  padding: 2rem 0rem 0rem 0rem;
 
   > h1 {
     margin: 0rem 0rem 8rem 0rem !important;
@@ -15,7 +16,7 @@
 
   > img {
     position: absolute;
-    max-width: 18rem;
+    max-width: 12rem;
     right: 0;
     top: 5rem;
   }

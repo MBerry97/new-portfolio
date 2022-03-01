@@ -1,12 +1,17 @@
 import React from 'react';
 import './PageTitle.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 type Props = {
   text: string;
 };
 
 const PageTitle = ({ text }: Props) => {
-  return <h1 className="pageTitle">{text}</h1>;
+  return (
+    <ScrollAnimation animateIn="fadeIn" duration={1}>
+      <h1 className="pageTitle">{text}</h1>
+    </ScrollAnimation>
+  );
 };
 
 export default PageTitle;
