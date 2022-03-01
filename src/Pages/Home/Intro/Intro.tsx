@@ -16,7 +16,7 @@ function Intro() {
       <img src={introBgImg} alt="me" />
       <div className="intro-container-inner">
         <div className="intro-info__div">
-          <span>Hi,</span>
+          <span>Hi 👋,</span>
           <span>I am Matthew</span>
           <p>Frontend Developer</p>
           <img src={underLine} alt="under line" />

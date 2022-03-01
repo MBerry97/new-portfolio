@@ -1,7 +1,6 @@
 @import '../../../Styles/styles.scss';
 
 .intro-container-outer {
-  // border: 1px solid green;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,16 +20,14 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+
   z-index: 1;
 
   > img {
     max-width: 20rem;
 
     align-self: flex-end;
-    // margin-top: 5rem;
-    box-shadow: -3px -3px 30px -6px black;
+
     position: absolute;
     bottom: 5rem;
   }
@@ -52,6 +49,7 @@
     font-size: $mobile-heading;
     font-weight: 800;
     line-height: 5rem;
+    @include dark-mode(false);
   }
 
   > p {
@@ -59,6 +57,7 @@
     color: $primary-blue;
     margin: 0;
     line-height: 5rem;
+    @include dark-mode(false);
   }
 
   > img {
@@ -69,4 +68,89 @@
 
 .intro-icon__div {
   display: flex;
+}
+
+body.dark-mode {
+  .intro-info__div {
+    > span {
+      @include dark-mode(true);
+    }
+
+    > p {
+      @include dark-mode(true);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-container-outer {
+    > img {
+      min-width: 45rem;
+    }
+  }
+  .intro-container-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.6rem 0rem 1.6rem;
+
+    > img {
+      position: relative;
+      align-self: center;
+      max-width: 25rem;
+      // bottom: auto;
+      top: 12rem;
+    }
+  }
+
+  .intro-info__div {
+    position: relative;
+    bottom: 3rem;
+    > span {
+      font-family: $Mulish;
+      font-size: $desktop-heading;
+      font-weight: 800;
+      line-height: 8rem;
+    }
+
+    > p {
+      font-size: $desktop-heading;
+      color: $primary-blue;
+      margin: 0;
+      line-height: 8rem;
+    }
+
+    > img {
+      max-width: 40rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro-container-outer {
+    padding: 0rem 5% 0rem 5%;
+  }
+
+  .intro-container-inner {
+    padding: 0rem 3.8rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .intro-container-outer {
+    padding: 0rem 15% 0rem 10%;
+
+    > img {
+      min-width: 80rem;
+    }
+  }
+
+  .intro-container-inner {
+    > img {
+      max-width: 35rem;
+      // bottom: auto;
+      top: 8rem;
+    }
+  }
 }

@@ -10,7 +10,9 @@
 
   position: fixed;
   z-index: 2;
-  background-color: $light-bg-grey;
+  background-color: transparent;
+  // border-bottom: 1px solid $primary-black;
+  box-shadow: 0.5px 0.5px 4px 0px $primary-black;
 }
 
 .logo {
