@@ -22,6 +22,7 @@
   flex-direction: column;
 
   z-index: 1;
+  min-height: 100%;
 
   > img {
     max-width: 25rem;
@@ -29,12 +30,12 @@
     align-self: flex-end;
 
     position: absolute;
-    bottom: 5rem;
+    bottom: 10rem;
   }
 
   > button {
     position: absolute;
-    bottom: 5rem;
+    bottom: 10rem;
   }
 }
 

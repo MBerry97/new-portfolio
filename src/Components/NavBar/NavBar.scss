@@ -22,3 +22,16 @@
   height: 4rem;
   width: 4rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  .navBar-container {
+    // $pad: 5% + 3.8rem;
+    // padding: 1.6rem 5% + 3.8rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navBar-container {
+    // padding: 1.6rem 10% + 3.8rem;
+  }
+}

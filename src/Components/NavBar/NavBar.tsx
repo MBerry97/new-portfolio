@@ -11,6 +11,16 @@ function NavBar() {
 
   const [isOpen, setOpen] = useState(false);
 
+  const renderNavItems = () => {
+    return items.map((item) => {
+      return (
+        <Link to={item} smooth>
+          {item}
+        </Link>
+      );
+    });
+  };
+
   return (
     <header>
       <nav className="navBar-container">
@@ -19,17 +29,7 @@ function NavBar() {
         </Link>
         <ThemeMode />
         <Hamburger toggled={isOpen} toggle={setOpen} />
-        {isOpen && (
-          <div>
-            {items.map((item) => {
-              return (
-                <Link to={item} smooth>
-                  {item}
-                </Link>
-              );
-            })}
-          </div>
-        )}
+        {isOpen && <div>{renderNavItems()}</div>}
       </nav>
     </header>
   );

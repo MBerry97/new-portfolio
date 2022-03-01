@@ -18,18 +18,19 @@
   flex: 1;
   flex-direction: column;
   z-index: 1;
+  min-height: 100%;
 }
 
 .intro-container-inner > img {
   max-width: 25rem;
   align-self: flex-end;
   position: absolute;
-  bottom: 5rem;
+  bottom: 10rem;
 }
 
 .intro-container-inner > button {
   position: absolute;
-  bottom: 5rem;
+  bottom: 10rem;
 }
 
 .intro-info__div {
