@@ -24,7 +24,7 @@
   z-index: 1;
   min-height: 100%;
 
-  > img {
+  .intro__img {
     max-width: 25rem;
 
     align-self: flex-end;
@@ -33,7 +33,7 @@
     bottom: 15rem;
   }
 
-  > button {
+  .intro-contact__btn {
     position: absolute;
     bottom: 15rem;
   }
@@ -60,14 +60,14 @@
     line-height: 5rem;
   }
 
-  > img {
+  .underLine__img {
     min-width: 100%;
-    margin-bottom: 2rem;
   }
 }
 
 .intro-icon__div {
   display: flex;
+  margin-top: 2rem;
 }
 
 body.dark-mode {
@@ -85,7 +85,7 @@ body.dark-mode {
     }
   }
   .intro-container-inner {
-    > img {
+    .intro__img {
       max-width: 30rem;
     }
   }
@@ -126,7 +126,7 @@ body.dark-mode {
   .intro-container-inner {
     padding: 19.2rem 3.8rem;
 
-    > img {
+    .intro__img {
       max-width: 35rem;
     }
   }
@@ -142,12 +142,12 @@ body.dark-mode {
   }
 
   .intro-container-inner {
-    > img {
+    .intro__img {
       max-width: 45rem;
       bottom: 10rem;
     }
 
-    > button {
+    .intro-contact__btn {
       bottom: 10rem;
     }
   }

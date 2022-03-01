@@ -21,14 +21,14 @@
   min-height: 100%;
 }
 
-.intro-container-inner > img {
+.intro-container-inner .intro__img {
   max-width: 25rem;
   align-self: flex-end;
   position: absolute;
   bottom: 15rem;
 }
 
-.intro-container-inner > button {
+.intro-container-inner .intro-contact__btn {
   position: absolute;
   bottom: 15rem;
 }
@@ -57,13 +57,13 @@
   line-height: 5rem;
 }
 
-.intro-info__div > img {
+.intro-info__div .underLine__img {
   min-width: 100%;
-  margin-bottom: 2rem;
 }
 
 .intro-icon__div {
   display: flex;
+  margin-top: 2rem;
 }
 
 body.dark-mode .intro-info__div > span {
@@ -75,7 +75,7 @@ body.dark-mode .intro-info__div > span {
   .intro-container-outer > img {
     min-width: 45rem;
   }
-  .intro-container-inner > img {
+  .intro-container-inner .intro__img {
     max-width: 30rem;
   }
   .intro-info__div {
@@ -110,7 +110,7 @@ body.dark-mode .intro-info__div > span {
   .intro-container-inner {
     padding: 19.2rem 3.8rem;
   }
-  .intro-container-inner > img {
+  .intro-container-inner .intro__img {
     max-width: 35rem;
   }
 }
@@ -122,11 +122,11 @@ body.dark-mode .intro-info__div > span {
   .intro-container-outer > img {
     min-width: 77rem;
   }
-  .intro-container-inner > img {
+  .intro-container-inner .intro__img {
     max-width: 45rem;
     bottom: 10rem;
   }
-  .intro-container-inner > button {
+  .intro-container-inner .intro-contact__btn {
     bottom: 10rem;
   }
   .intro-info__div > span {

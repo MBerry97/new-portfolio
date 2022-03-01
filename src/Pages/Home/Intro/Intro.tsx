@@ -9,6 +9,9 @@ import linkedInImg from 'Assets/icons/linkedin.svg';
 import githubImg from 'Assets/icons/github.svg';
 import Button from 'Components/Button/Button';
 import emailImg from 'Assets/icons/email.png';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Send from 'Components/Icons/Send';
+import { Link } from 'react-scroll';
 
 function Intro() {
   return (
@@ -16,23 +19,54 @@ function Intro() {
       <img src={introBgImg} alt="me" />
       <div className="intro-container-inner">
         <div className="intro-info__div">
-          <span>Hi 👋,</span>
-          <span>I am Matthew</span>
-          <p>Frontend Developer</p>
-          <img src={underLine} alt="under line" />
+          <span>
+            <ScrollAnimation animateIn="fadeInLeft">Hi 👋,</ScrollAnimation>
+          </span>
+          <span>
+            <ScrollAnimation animateIn="fadeInLeft" delay={500}>
+              I am Matthew
+            </ScrollAnimation>
+          </span>
 
-          <div className="intro-icon__div">
+          <p>
+            <ScrollAnimation animateIn="fadeInLeft" delay={1000}>
+              Frontend Developer
+              <img
+                src={underLine}
+                alt="under line"
+                className="underLine__img"
+              />
+            </ScrollAnimation>
+          </p>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            delay={1500}
+            className="intro-icon__div"
+          >
             <img src={linkedInImg} alt="linkedIn" />
             <img src={githubImg} alt="github" />
-          </div>
+          </ScrollAnimation>
         </div>
 
-        <img src={meIntro} alt="me" />
-        <Button
-          text="Contact"
-          type="action"
-          img={<img src={emailImg} alt="contact" />}
-        />
+        <ScrollAnimation
+          animateIn="fadeInDown"
+          delay={2000}
+          className="intro__img"
+          offset={0}
+        >
+          <img src={meIntro} alt="me" />
+        </ScrollAnimation>
+
+        <ScrollAnimation
+          animateIn="fadeInDown"
+          delay={2000}
+          className="intro-contact__btn"
+          offset={0}
+        >
+          <Link to="Contact" smooth offset={-82}>
+            <Button text="Contact" type="action" img={<Send />} />
+          </Link>
+        </ScrollAnimation>
       </div>
     </section>
   );
