@@ -4,6 +4,7 @@ import './About.css';
 import aboutImg from 'Assets/me/me-about.jpg';
 import Button from 'Components/Button/Button';
 import aboutBgHand from 'Assets/bgs/about-hand-bg.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function About() {
   const skills = [
@@ -28,7 +29,7 @@ function About() {
     <section className="about-container-outer" id="About">
       <img src={aboutBgHand} alt="waving hand" />
       <PageTitle text="🧑🏻 About" />
-      <div className="about-container-inner">
+      <ScrollAnimation className="about-container-inner" animateIn="fadeInLeft">
         <span>Nice to meet you,</span>
         <span id="about-name__span">I am Matt Berry</span>
         <p>
@@ -42,11 +43,12 @@ function About() {
           recieving UIs, from the first brainstorming, wireframes, mockups,
           design, all the way until the final product.
         </p>
-      </div>
-      <div className="about-skills__div">
+      </ScrollAnimation>
+
+      <ScrollAnimation className="about-skills__div" animateIn="fadeInLeft">
         <span>My experience includes but not limited to</span>
         <div>{renderSkills()}</div>
-      </div>
+      </ScrollAnimation>
     </section>
   );
 }

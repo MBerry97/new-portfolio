@@ -105,7 +105,7 @@ body.dark-mode .about-skills__div > span {
 
 @media only screen and (min-width: 1024px) {
   .about-container-outer {
-    padding: 0rem 5% 0rem 5%;
+    padding: 5rem 5% 0rem 5%;
   }
   .about-container-outer > img {
     position: absolute;
@@ -153,7 +153,7 @@ body.dark-mode .about-skills__div > span {
 
 @media only screen and (min-width: 1440px) {
   .about-container-outer {
-    padding: 0rem 10% 20rem 10%;
+    padding: 5rem 10% 20rem 10%;
   }
   .about-container-outer > img {
     position: absolute;
