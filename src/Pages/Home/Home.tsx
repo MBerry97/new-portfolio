@@ -1,3 +1,4 @@
+import NavBar from 'Components/NavBar/NavBar';
 import { Provider } from 'Contexts/Home.context';
 import React, { useState } from 'react';
 import About from './About/About';
@@ -10,6 +11,7 @@ function Home() {
 
   return (
     <Provider value={{ themeState, setThemeState }}>
+      <NavBar />
       <Intro />
       <About />
       <Projects />

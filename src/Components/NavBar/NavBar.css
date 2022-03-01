@@ -1,5 +1,4 @@
 .navBar-container {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +6,7 @@
   width: 100%;
   position: fixed;
   z-index: 2;
+  background-color: #f3f3f3;
 }
 
 .logo {

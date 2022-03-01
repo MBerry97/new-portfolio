@@ -32,6 +32,12 @@
   margin-right: 0.8rem;
 }
 
+.button-action > img {
+  max-width: 2rem;
+  max-height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
 .button-action:hover {
   box-shadow: inset 0 -3.25em 0 0 #5784f9;
 }
