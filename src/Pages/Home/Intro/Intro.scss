@@ -30,12 +30,12 @@
     align-self: flex-end;
 
     position: absolute;
-    bottom: 10rem;
+    bottom: 15rem;
   }
 
   > button {
     position: absolute;
-    bottom: 10rem;
+    bottom: 15rem;
   }
 }
 
@@ -144,8 +144,11 @@ body.dark-mode {
   .intro-container-inner {
     > img {
       max-width: 45rem;
-      // bottom: auto;
-      // top: 8rem;
+      bottom: 10rem;
+    }
+
+    > button {
+      bottom: 10rem;
     }
   }
 

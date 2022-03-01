@@ -25,12 +25,12 @@
   max-width: 25rem;
   align-self: flex-end;
   position: absolute;
-  bottom: 10rem;
+  bottom: 15rem;
 }
 
 .intro-container-inner > button {
   position: absolute;
-  bottom: 10rem;
+  bottom: 15rem;
 }
 
 .intro-info__div {
@@ -124,6 +124,10 @@ body.dark-mode .intro-info__div > span {
   }
   .intro-container-inner > img {
     max-width: 45rem;
+    bottom: 10rem;
+  }
+  .intro-container-inner > button {
+    bottom: 10rem;
   }
   .intro-info__div > span {
     font-family: "Mulish", sans-serif;
