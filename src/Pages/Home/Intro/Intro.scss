@@ -57,11 +57,10 @@
     color: $primary-blue;
     margin: 0;
     line-height: 5rem;
-    @include dark-mode(false);
   }
 
   > img {
-    max-width: 28rem;
+    min-width: 100%;
     margin-bottom: 2rem;
   }
 }
@@ -73,10 +72,6 @@
 body.dark-mode {
   .intro-info__div {
     > span {
-      @include dark-mode(true);
-    }
-
-    > p {
       @include dark-mode(true);
     }
   }

@@ -54,12 +54,10 @@
   color: #5784f9;
   margin: 0;
   line-height: 5rem;
-  color: black;
-  transition: color 1s;
 }
 
 .intro-info__div > img {
-  max-width: 28rem;
+  min-width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -68,11 +66,6 @@
 }
 
 body.dark-mode .intro-info__div > span {
-  color: white;
-  transition: color 1s;
-}
-
-body.dark-mode .intro-info__div > p {
   color: white;
   transition: color 1s;
 }
