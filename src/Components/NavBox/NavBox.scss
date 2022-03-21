@@ -1,0 +1,36 @@
+@import '../../Styles/styles.scss';
+
+.navBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start !important;
+
+  background-color: $light-bg-grey;
+  position: absolute;
+  right: 1.6rem;
+  bottom: -16.5rem;
+  min-width: 25rem;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  box-shadow: 0px 3px 9px 1px black;
+
+  transition: color 1.5s, backGround 1.5s;
+
+  .nav-item--mobile {
+    padding: 1rem 0rem;
+  }
+
+  > button {
+    margin: 0 auto;
+  }
+}
+
+body.dark-mode {
+  .navBox {
+    background-color: $dark-bg-grey;
+    color: white;
+  }
+}

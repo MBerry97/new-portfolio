@@ -27,7 +27,7 @@ export default function ThemeMode() {
     <DarkModeToggle
       checked={themeState}
       onChange={() => setThemeState(!themeState)}
-      size={60}
+      size={50}
     />
   );
 }

@@ -1,9 +1,11 @@
+import NavBox from 'Components/NavBox/NavBox';
+import { AnimatePresence } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 import ThemeMode from 'Hooks/ThemeMode';
 import useInnerWidth from 'Hooks/useInnerWidth';
 import useScrollFromTop from 'Hooks/useScrollFromTop';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './NavBar.css';
 
@@ -12,7 +14,6 @@ type Props = {
 };
 
 function NavBar({ themeState }: Props) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const items = ['About', 'Projects', 'Contact'];
 
   const [isOpen, setOpen] = useState(false);
@@ -22,6 +23,12 @@ function NavBar({ themeState }: Props) {
   const isMobileWidth = windowWidth < 1024;
 
   const scrollPosition = useScrollFromTop();
+
+  useEffect(() => {
+    if (!isMobileWidth) {
+      setOpen(false);
+    }
+  }, [isMobileWidth]);
 
   const renderNavItems = (build: 'desktop' | 'mobile') => {
     return items.map((item) => {
@@ -56,11 +63,19 @@ function NavBar({ themeState }: Props) {
           <Link className="logo" to="Home" smooth>
             Home
           </Link>
-          <ThemeMode />
+          {!isMobileWidth && <ThemeMode />}
         </div>
-        {isMobileWidth && <Hamburger toggled={isOpen} toggle={setOpen} />}
+        {isMobileWidth && (
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            color={themeState ? 'white' : 'black'}
+          />
+        )}
         {!isMobileWidth && <div>{renderNavItems('desktop')}</div>}
-        {isOpen && <div>{renderNavItems('mobile')}</div>}
+        <AnimatePresence>
+          {isOpen && <NavBox>{renderNavItems('mobile')}</NavBox>}
+        </AnimatePresence>
       </nav>
     </header>
   );
