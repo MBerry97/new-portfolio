@@ -14,6 +14,9 @@ const Send = () => {
       <path
         d="M0.00999999 18L21 9L0.00999999 0L0 7L15 9L0 11L0.00999999 18Z"
         fill={themeState ? '#FFFFFF' : '#211B12'}
+        style={{
+          transition: 'fill 1.5s',
+        }}
       />
     </svg>
   );

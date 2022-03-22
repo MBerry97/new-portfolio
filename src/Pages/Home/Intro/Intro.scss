@@ -54,6 +54,7 @@
     color: $primary-blue;
     margin: 0;
     line-height: 5rem;
+    font-weight: 800;
   }
 
   .underLine__img {
@@ -64,6 +65,12 @@
 .intro-icon__div {
   display: flex;
   margin-top: 2rem;
+
+  svg {
+    min-width: 3rem;
+    max-height: 3rem;
+    margin-right: 1.4rem;
+  }
 }
 
 body.dark-mode {
@@ -93,8 +100,7 @@ body.dark-mode {
 
     > p {
       font-size: $desktop-heading;
-      color: $primary-blue;
-      margin: 0;
+
       line-height: 8rem;
     }
   }
@@ -149,8 +155,7 @@ body.dark-mode {
 
     > p {
       font-size: 5.6rem;
-      color: $primary-blue;
-      margin: 0;
+
       line-height: 10rem;
     }
   }
