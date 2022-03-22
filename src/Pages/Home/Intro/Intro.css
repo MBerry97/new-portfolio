@@ -113,10 +113,10 @@ body.dark-mode .intro-info__div > span {
     padding: 0rem 10% 0rem 10%;
   }
   .intro-container-outer > img {
-    min-width: 77rem;
+    min-width: 65rem;
   }
   .intro-container-inner .intro__img {
-    max-width: 45rem;
+    max-width: 35rem;
   }
   .intro-info__div > span {
     font-family: "Mulish", sans-serif;
@@ -130,8 +130,13 @@ body.dark-mode .intro-info__div > span {
     margin: 0;
     line-height: 10rem;
   }
-  .intro-info__div > img {
-    max-width: 40rem;
-    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1920px) {
+  .intro-container-outer > img {
+    min-width: 77rem;
+  }
+  .intro-container-inner .intro__img {
+    max-width: 45rem;
   }
 }
