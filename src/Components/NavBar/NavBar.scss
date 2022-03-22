@@ -30,17 +30,34 @@
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  // @include dark-mode(false);
+
   @include dark-mode(false);
+  @include nav-hover(false);
 }
 
 .nav-item--desktop {
   margin-left: 2.8rem;
 }
 
+.nav-item--desktop:hover,
+.logo:hover {
+  background-size: 100% 3px;
+}
+
 body.dark-mode {
   .nav-item--desktop,
   .logo {
     @include dark-mode(true);
+    @include nav-hover(true);
+  }
+
+  .nav-item--desktop:hover,
+  .logo:hover {
+    background-size: 100% 3px;
   }
 }
 
@@ -55,6 +72,5 @@ body.dark-mode {
   .navBar-container {
     $pad: calc(10% + 3.8rem);
     padding: 1.6rem $pad;
-    // padding: 1.6rem 10% + 3.8rem;
   }
 }

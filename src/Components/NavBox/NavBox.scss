@@ -20,6 +20,8 @@
   transition: color 1.5s, backGround 1.5s;
 
   .nav-item--mobile {
+    cursor: pointer;
+    min-width: 100%;
     padding: 1rem 0rem;
   }
 

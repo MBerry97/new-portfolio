@@ -8,3 +8,20 @@
   }
   transition: color 1s;
 }
+
+@mixin nav-hover($dark-mode) {
+  $border-width: 3px;
+  $bottom-distance: 0px;
+
+  background-size: 0% $border-width;
+  background-repeat: no-repeat;
+  transition: color 1s, background-size 0.3s;
+
+  background-position: 0 100%;
+
+  @if $dark-mode {
+    background-image: linear-gradient($primary-white, $primary-white);
+  } @else {
+    background-image: linear-gradient($primary-black, $primary-black);
+  }
+}

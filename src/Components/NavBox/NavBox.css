@@ -17,6 +17,8 @@
 }
 
 .navBox .nav-item--mobile {
+  cursor: pointer;
+  min-width: 100%;
   padding: 1rem 0rem;
 }
 
