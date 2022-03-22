@@ -1,11 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useContext } from 'react';
-import DarkModeToggle from 'react-dark-mode-toggle';
-import { homeContext } from 'Contexts/Home.context';
+import React, { useEffect } from 'react';
 
-export default function ThemeMode() {
-  const { themeState, setThemeState } = useContext(homeContext);
-
+export default function ThemeMode(
+  themeState: boolean,
+  setThemeState: React.Dispatch<React.SetStateAction<boolean>>,
+) {
   useEffect(() => {
     const getTheme = localStorage.getItem('Theme');
     if (getTheme === 'dark') {
@@ -22,12 +21,4 @@ export default function ThemeMode() {
       document.body.classList.remove('dark-mode');
     }
   }, [themeState]);
-
-  return (
-    <DarkModeToggle
-      checked={themeState}
-      onChange={() => setThemeState(!themeState)}
-      size={50}
-    />
-  );
 }

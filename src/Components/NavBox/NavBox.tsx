@@ -1,7 +1,7 @@
-import ThemeMode from 'Hooks/ThemeMode';
 import React from 'react';
 import './NavBox.css';
 import { motion } from 'framer-motion';
+import ThemeToggle from 'Components/ThemeToggle/ThemeToggle';
 
 type Props = {
   children: JSX.Element[];
@@ -16,7 +16,7 @@ const NavBox = ({ children }: Props) => {
       exit={{ y: '-300px' }}
     >
       {children}
-      <ThemeMode />
+      <ThemeToggle />
     </motion.div>
   );
 };

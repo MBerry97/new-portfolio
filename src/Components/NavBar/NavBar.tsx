@@ -1,7 +1,7 @@
 import NavBox from 'Components/NavBox/NavBox';
+import ThemeToggle from 'Components/ThemeToggle/ThemeToggle';
 import { AnimatePresence } from 'framer-motion';
 import Hamburger from 'hamburger-react';
-import ThemeMode from 'Hooks/ThemeMode';
 import useInnerWidth from 'Hooks/useInnerWidth';
 import useScrollFromTop from 'Hooks/useScrollFromTop';
 
@@ -63,7 +63,7 @@ function NavBar({ themeState }: Props) {
           <Link className="logo" to="Home" smooth>
             Home
           </Link>
-          {!isMobileWidth && <ThemeMode />}
+          {!isMobileWidth && <ThemeToggle />}
         </div>
         {isMobileWidth && (
           <Hamburger
