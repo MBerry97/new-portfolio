@@ -6,7 +6,7 @@
   background-color: #f3f3f3;
   position: absolute;
   right: 1.6rem;
-  bottom: -16.5rem;
+  bottom: -17.3rem;
   min-width: 25rem;
   padding: 0.8rem;
   border-radius: 0.6rem;
@@ -18,6 +18,10 @@
 
 .navBox .nav-item--mobile {
   padding: 1rem 0rem;
+}
+
+.navBox .nav-item--mobile:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 .navBox > button {

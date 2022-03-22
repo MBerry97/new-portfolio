@@ -103,7 +103,7 @@ body.dark-mode .intro-info__div > span {
     min-width: 60rem;
   }
   .intro-container-inner {
-    padding: 19.2rem 3.8rem;
+    padding: 13.2rem 3.8rem 2rem 3.8rem;
   }
   .intro-container-inner .intro__img {
     max-width: 35rem;
@@ -119,10 +119,6 @@ body.dark-mode .intro-info__div > span {
   }
   .intro-container-inner .intro__img {
     max-width: 45rem;
-    bottom: 10rem;
-  }
-  .intro-container-inner .intro-contact__btn {
-    bottom: 10rem;
   }
   .intro-info__div > span {
     font-family: "Mulish", sans-serif;
