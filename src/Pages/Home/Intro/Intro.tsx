@@ -31,13 +31,15 @@ function Intro() {
           </span>
           <span>
             <ScrollAnimation animateIn="fadeInLeft" delay={500}>
-              I am Matthew
+              I am{' '}
+              <span className="intro-info__span-outline-black">Matthew</span>
             </ScrollAnimation>
           </span>
 
           <p>
             <ScrollAnimation animateIn="fadeInLeft" delay={1000}>
-              Frontend Developer
+              Frontend{' '}
+              <span className="intro-info__span-outline-blue">Developer</span>
               <img
                 src={underLine}
                 alt="under line"
