@@ -68,7 +68,6 @@
   min-width: 3rem;
   max-height: 3rem;
   margin-right: 1.4rem;
-  transition: color 1.5s;
 }
 
 body.dark-mode .intro-info__div > span {

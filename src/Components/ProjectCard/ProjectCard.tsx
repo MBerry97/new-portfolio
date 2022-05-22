@@ -9,9 +9,17 @@ type Props = {
   img: string;
   buttonText: string[];
   projectDesc: string;
+  codeLink: string;
+  demoLink: string;
 };
 
-const ProjectCard = ({ img, buttonText, projectDesc }: Props) => {
+const ProjectCard = ({
+  img,
+  buttonText,
+  projectDesc,
+  codeLink,
+  demoLink,
+}: Props) => {
   const renderInfoButtons = () => {
     return buttonText.map((text) => <Button type="info" text={text} />);
   };
@@ -23,8 +31,12 @@ const ProjectCard = ({ img, buttonText, projectDesc }: Props) => {
         {renderInfoButtons()}
         <p>{projectDesc}</p>
         <div>
-          <Button type="action" text="Code" img={<Code />} />
-          <Button type="action" text="Demo" img={<Checkmark />} />
+          <a href={codeLink} target="_blank" rel="noreferrer">
+            <Button type="action" text="Code" img={<Code />} />
+          </a>
+          <a href={demoLink} target="_blank" rel="noreferrer">
+            <Button type="action" text="Demo" img={<Checkmark />} />
+          </a>
         </div>
       </div>
     </ScrollAnimation>

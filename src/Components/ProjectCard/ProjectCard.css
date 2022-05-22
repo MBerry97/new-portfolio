@@ -34,6 +34,10 @@
   display: flex;
 }
 
+.projectCard-inner__div a {
+  text-decoration: none;
+}
+
 body.dark-mode .projectCard-inner__div > p {
   color: white;
   transition: color 1s;
