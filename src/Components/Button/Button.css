@@ -8,6 +8,7 @@
   margin-right: 0.4rem;
   display: inline-block;
   transition: 0.35s ease;
+  min-height: 4rem;
 }
 
 .button-info {

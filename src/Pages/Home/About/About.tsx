@@ -33,8 +33,10 @@ function About() {
         <span>Nice to meet you,</span>
         <span id="about-name__span">I am Matt Berry</span>
         <p>
-          Working full time in React, Typescript and SCSS, leading the team for
-          revamping DotCMS administration system.
+          Working full time in React, Typescript and SCSS, building the front
+          end of a communication platform and aiding with innovative technical
+          solutions for voice/video chat, text messaging, screensharing and
+          other forms of remote communication.
         </p>
         <img src={aboutImg} alt="me" />
         <span>Code, Design, Learn and Repeat.</span>
