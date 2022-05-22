@@ -35,8 +35,7 @@ function About() {
         <p>
           Working full time in React, Typescript and SCSS, building the front
           end of a communication platform and aiding with innovative technical
-          solutions for voice/video chat, text messaging, screensharing and
-          other forms of remote communication.
+          solutions for various forms of remote communication.
         </p>
         <img src={aboutImg} alt="me" />
         <span>Code, Design, Learn and Repeat.</span>
