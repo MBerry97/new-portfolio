@@ -15,14 +15,14 @@ const Projects = () => {
         <ProjectCard
           img={shortlyUrlImg}
           buttonText={['React', 'HTML', 'CSS', 'Git']}
-          projectDesc="This project required me to build a fully responsive landing page to the figma designs provided. Intergrating with an API it allows you to shorten any link. Built in React, HTML, CSS and tested with React testing library."
+          projectDesc="A fully responsive landing page built towards a professional design. Intergrating with an API it allows you to shorten any link. Built in React, HTML, CSS and tested with React testing library."
           codeLink="https://github.com/MBerry97/url-shortener"
           demoLink="https://url-shortner.netlify.app"
         />
         <ProjectCard
           img={sneakerImg}
           buttonText={['React', 'TypeScript', 'HTML', 'SCSS', 'Git']}
-          projectDesc="This project required me to build a fully responsive landing page to the figma designs provided. A user can inspect the product in multiple views and add their specified quantity to the cart. Built in React, TypeScript, HTML, Sass and tested with React testing library."
+          projectDesc="A fully responsive fluid checkout page. You can inspect the product in multiple views and add your specified quantity to the cart. Built in React, TypeScript, HTML, Sass and tested with React testing library."
           codeLink="https://github.com/MBerry97/product-page"
           demoLink="https://sneaker-product-page.netlify.app"
         />
