@@ -1,9 +1,9 @@
 @import '../../../Styles/styles.scss';
 
 .pageTitle {
-  font-size: $mobile-heading;
+  font-size: $mobile-sub-heading;
   margin: 4rem 0rem 8rem 0rem;
-  border-bottom: 4px solid $primary-blue;
+  border-bottom: 3px solid $primary-blue;
   min-height: 5rem;
   @include dark-mode(false);
   z-index: 1;
@@ -17,7 +17,7 @@ body.dark-mode {
 
 @media only screen and (min-width: 1024px) {
   .pageTitle {
-    font-size: $desktop-sub-heading;
+    font-size: $desktop-sub-heading - 0.8rem;
     min-height: 6.5rem;
   }
 }
