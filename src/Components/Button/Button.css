@@ -1,5 +1,6 @@
 .button-action,
-.button-info {
+.button-info,
+.button-submitted {
   background-color: transparent;
   color: black;
   transition: color 1s;
@@ -22,21 +23,32 @@
   box-shadow: 3px 3px 10px -5px black;
 }
 
-.button-action {
+.button-action,
+.button-submitted {
   border-bottom: 0.3rem solid #5784f9;
   display: flex;
   align-items: center;
   font-weight: 800;
 }
 
-.button-action > svg {
+.button-action > svg,
+.button-submitted > svg {
   margin-right: 0.8rem;
 }
 
-.button-action > img {
+.button-action > img,
+.button-submitted > img {
   max-width: 2rem;
   max-height: 1.5rem;
   margin-right: 0.8rem;
+}
+
+.button-submitted {
+  border-bottom: 0.3rem solid #2df591;
+}
+
+.button-submitted:hover {
+  box-shadow: inset 0 -3.25em 0 0 #2df591;
 }
 
 .button-action:hover {
@@ -44,7 +56,8 @@
 }
 
 body.dark-mode .button-info,
-body.dark-mode .button-action {
+body.dark-mode .button-action,
+body.dark-mode .button-submitted {
   color: white;
   transition: color 1s;
   transition: 0.35s ease;

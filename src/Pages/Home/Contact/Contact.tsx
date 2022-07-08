@@ -12,13 +12,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import sendEmail from 'Helpers/SendEmail';
 
 function Contact() {
-  const form: any = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
   const errorStateDefault = {
     name: false,
     email: false,
     message: false,
   };
   const [formError, setFormError] = useState(errorStateDefault);
+  const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -45,7 +46,7 @@ function Contact() {
       return;
     }
 
-    sendEmail(event, form);
+    sendEmail(event, form, setIsSent);
     setFormError(errorStateDefault);
   };
 
@@ -104,7 +105,12 @@ function Contact() {
             delay={900}
             offset={50}
           >
-            <Button type="action" text="Send" img={<Send />} btnType="submit" />
+            <Button
+              type={isSent ? 'submitted' : 'action'}
+              text={isSent ? 'Sent' : 'Send'}
+              img={<Send />}
+              btnType="submit"
+            />
           </ScrollAnimation>
         </form>
       </div>

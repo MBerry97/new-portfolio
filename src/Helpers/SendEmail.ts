@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-const sendEmail = (event: any, form: any) => {
+const sendEmail = (event: any, form: any, cb: (sent: boolean) => void) => {
   emailjs
     .sendForm(
       'service_c1gnhxf',
@@ -11,6 +11,10 @@ const sendEmail = (event: any, form: any) => {
     .then(
       (result) => {
         console.log(result.text);
+        cb(true);
+        setTimeout(() => {
+          cb(false);
+        }, 5000);
       },
       (error) => {
         console.log(error.text);
