@@ -4,17 +4,18 @@ import React from 'react';
 import './Button.css';
 
 type Props = {
-  type: 'info' | 'action';
+  type: 'info' | 'action' | 'submitted';
   text: string;
   img?: JSX.Element;
   btnType?: 'button' | 'submit' | 'reset' | undefined;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Button = ({ type, text, img, btnType = 'button' }: Props) => {
+  const showImg = type === 'action' || 'submitted';
+
   return (
     <button type={btnType} className={`button-${type}`}>
-      {type === 'action' && img}
+      {showImg && img}
       {text}
     </button>
   );

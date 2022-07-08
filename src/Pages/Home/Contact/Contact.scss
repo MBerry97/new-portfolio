@@ -23,11 +23,15 @@
   max-width: 40rem;
   padding: 1.6rem 0.8rem;
 
-  input,
-  textarea {
+  .contact_name-input,
+  .contact_email-input,
+  .contact_message-input,
+  .contact_name-input--error,
+  .contact_email-input--error,
+  .contact_message-input--error {
     min-width: 100%;
     margin: 1rem 0rem 2rem 0rem;
-    outline: 1px solid #e8ecf4;
+
     min-height: 3rem;
     border: none;
     border-radius: 0.4rem;
@@ -36,9 +40,22 @@
     font-size: $mobile-paragraph;
   }
 
-  input:focus,
-  textarea:focus {
+  .contact_name-input:focus,
+  .contact_email-input:focus,
+  .contact_message-input:focus {
     outline: 2px solid $primary-blue;
+  }
+
+  .contact_name-input,
+  .contact_email-input,
+  .contact_message-input {
+    outline: 1px solid #e8ecf4;
+  }
+
+  .contact_name-input--error,
+  .contact_email-input--error,
+  .contact_message-input--error {
+    outline: 2px solid $primary-red;
   }
 
   text-area {

@@ -19,11 +19,14 @@
   padding: 1.6rem 0.8rem;
 }
 
-.contact-form-container input,
-.contact-form-container textarea {
+.contact-form-container .contact_name-input,
+.contact-form-container .contact_email-input,
+.contact-form-container .contact_message-input,
+.contact-form-container .contact_name-input--error,
+.contact-form-container .contact_email-input--error,
+.contact-form-container .contact_message-input--error {
   min-width: 100%;
   margin: 1rem 0rem 2rem 0rem;
-  outline: 1px solid #e8ecf4;
   min-height: 3rem;
   border: none;
   border-radius: 0.4rem;
@@ -32,9 +35,22 @@
   font-size: 1.4rem;
 }
 
-.contact-form-container input:focus,
-.contact-form-container textarea:focus {
+.contact-form-container .contact_name-input:focus,
+.contact-form-container .contact_email-input:focus,
+.contact-form-container .contact_message-input:focus {
   outline: 2px solid #5784f9;
+}
+
+.contact-form-container .contact_name-input,
+.contact-form-container .contact_email-input,
+.contact-form-container .contact_message-input {
+  outline: 1px solid #e8ecf4;
+}
+
+.contact-form-container .contact_name-input--error,
+.contact-form-container .contact_email-input--error,
+.contact-form-container .contact_message-input--error {
+  outline: 2px solid #ed4337;
 }
 
 .contact-form-container text-area {

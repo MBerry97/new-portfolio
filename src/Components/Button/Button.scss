@@ -1,7 +1,8 @@
 @import '../../Styles/styles.scss';
 
 .button-action,
-.button-info {
+.button-info,
+.button-submitted {
   background-color: transparent;
   @include dark-mode(false);
   font-size: $mobile-paragraph;
@@ -23,7 +24,8 @@
   box-shadow: 3px 3px 10px -5px black;
 }
 
-.button-action {
+.button-action,
+.button-submitted {
   border-bottom: 0.3rem solid $primary-blue;
   display: flex;
   align-items: center;
@@ -41,13 +43,21 @@
   }
 }
 
+.button-submitted {
+  border-bottom: 0.3rem solid $primary-green;
+}
+.button-submitted:hover {
+  box-shadow: inset 0 -3.25em 0 0 $primary-green;
+}
+
 .button-action:hover {
   box-shadow: inset 0 -3.25em 0 0 $primary-blue;
 }
 
 body.dark-mode {
   .button-info,
-  .button-action {
+  .button-action,
+  .button-submitted {
     @include dark-mode(true);
     transition: 0.35s ease;
   }
