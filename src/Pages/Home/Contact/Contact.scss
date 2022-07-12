@@ -43,7 +43,8 @@
   .contact_name-input:focus,
   .contact_email-input:focus,
   .contact_message-input:focus {
-    outline: 2px solid $primary-blue;
+    box-shadow: 0px 0px 0px 2px inset $primary-blue;
+    outline: none;
   }
 
   .contact_name-input,
@@ -55,7 +56,9 @@
   .contact_name-input--error,
   .contact_email-input--error,
   .contact_message-input--error {
-    outline: 2px solid $primary-red;
+    // outline: 2px solid $primary-red;
+    box-shadow: 0px 0px 0px 2px inset $primary-red;
+    outline: none;
   }
 
   text-area {

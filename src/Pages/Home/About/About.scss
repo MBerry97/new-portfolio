@@ -52,11 +52,11 @@
   #about-name__span {
     color: $primary-blue;
   }
-  #about-name__span {
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-  }
+  // #about-name__span {
+  //   font-size: 1.8rem;
+  //   font-weight: 800;
+  //   letter-spacing: -0.5px;
+  // }
 
   > img {
     margin: 1rem 0rem;
@@ -205,11 +205,11 @@ body.dark-mode {
 
     > span:nth-of-type(3) {
       font-size: 2.4rem;
-      margin: 28.5rem 0rem 0rem 0rem;
+      margin: 27.5rem 0rem 0rem 0rem;
     }
     > p:last-of-type {
       font-size: 1.6rem;
-      margin: 32.5rem 0rem 0rem 0rem;
+      margin: 31.5rem 0rem 0rem 0rem;
     }
   }
 }

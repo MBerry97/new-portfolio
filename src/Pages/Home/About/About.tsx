@@ -31,7 +31,7 @@ function About() {
       <PageTitle text="🧑🏻 About" />
       <ScrollAnimation className="about-container-inner" animateIn="fadeInLeft">
         <span>Nice to meet you,</span>
-        <span id="about-name__span">I am Matt Berry</span>
+        <span id="about-name__span">I am Matt Berry.</span>
         <p>
           Working full time in React, Typescript and SCSS, building the front
           end of a communication platform and aiding with innovative technical
