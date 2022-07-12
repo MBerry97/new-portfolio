@@ -83,14 +83,14 @@ function Intro() {
               <Button text="Contact" type="action" img={<Send />} />
             </Link>
           </ScrollAnimation>
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="fadeInDown"
             delay={2000}
             className="intro__img"
             offset={0}
           >
             <img src={meIntro} alt="me" />
-          </ScrollAnimation>
+          </ScrollAnimation> */}
         </div>
       </div>
     </section>
