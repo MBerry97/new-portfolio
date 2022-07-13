@@ -38,7 +38,7 @@ function About() {
           solutions for various forms of remote communication.
         </p>
         <img src={aboutImg} alt="me" />
-        <span>Code, Design, Learn and Repeat.</span>
+
         <p>
           Frontend is my true passion and I really enjoy the whole process of
           recieving UIs, from the first brainstorming, wireframes, mockups,
