@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react/destructuring-assignment */
 import Button from 'Components/Button/Button';
 import Send from 'Components/Icons/Send';
 import PageTitle from 'Components/Text/PageTitle/PageTitle';

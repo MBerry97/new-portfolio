@@ -38,8 +38,7 @@
 .contact-form-container .contact_name-input:focus,
 .contact-form-container .contact_email-input:focus,
 .contact-form-container .contact_message-input:focus {
-  box-shadow: 0px 0px 0px 2px inset #5784f9;
-  outline: none;
+  outline: 2px solid #5784f9;
 }
 
 .contact-form-container .contact_name-input,
@@ -51,8 +50,7 @@
 .contact-form-container .contact_name-input--error,
 .contact-form-container .contact_email-input--error,
 .contact-form-container .contact_message-input--error {
-  box-shadow: 0px 0px 0px 2px inset #ed4337;
-  outline: none;
+  outline: 2px solid #ed4337;
 }
 
 .contact-form-container text-area {
