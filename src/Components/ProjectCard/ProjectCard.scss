@@ -6,6 +6,7 @@
   border-top-right-radius: 1.8rem;
   overflow: hidden;
   max-width: 40rem;
+  box-shadow: 0px 0px 6px 0px $primary-blue;
 
   > img {
     max-height: 20.5rem;
@@ -15,6 +16,9 @@
 
 .projectCard-inner__div {
   padding: 1.6rem;
+  // border-left: 1px solid $primary-blue;
+  // border-right: 1px solid $primary-blue;
+  // border-bottom: 1px solid $primary-blue;
 
   > h1 {
     margin: 0rem 0rem 1rem 0rem;

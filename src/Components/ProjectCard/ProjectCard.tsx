@@ -11,6 +11,7 @@ type Props = {
   projectDesc: string;
   codeLink: string;
   demoLink: string;
+  title: string;
 };
 
 const ProjectCard = ({
@@ -19,15 +20,21 @@ const ProjectCard = ({
   projectDesc,
   codeLink,
   demoLink,
+  title,
 }: Props) => {
   const renderInfoButtons = () => {
     return buttonText.map((text) => <Button type="info" text={text} />);
   };
   return (
-    <ScrollAnimation className="projectCard" animateIn="fadeIn" duration={1.5}>
+    <ScrollAnimation
+      className="projectCard"
+      animateIn="fadeIn"
+      duration={1.5}
+      animateOnce
+    >
       <img src={img} alt="project preview" />
       <div className="projectCard-inner__div">
-        <h1>Shortly URL landing page</h1>
+        <h1>{title}</h1>
         {renderInfoButtons()}
         <p>{projectDesc}</p>
         <div>

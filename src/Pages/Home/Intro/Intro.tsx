@@ -27,17 +27,19 @@ function Intro() {
       <div className="intro-container-inner">
         <div className="intro-info__div">
           <span>
-            <ScrollAnimation animateIn="fadeInLeft">Hi 👋,</ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+              Hi 👋,
+            </ScrollAnimation>
           </span>
           <span>
-            <ScrollAnimation animateIn="fadeInLeft" delay={500}>
+            <ScrollAnimation animateIn="fadeInLeft" delay={500} animateOnce>
               I am{' '}
               <span className="intro-info__span-outline-black">Matthew</span>
             </ScrollAnimation>
           </span>
 
           <p>
-            <ScrollAnimation animateIn="fadeInLeft" delay={1000}>
+            <ScrollAnimation animateIn="fadeInLeft" delay={1000} animateOnce>
               Frontend{' '}
               <span className="intro-info__span-outline-blue">Developer</span>
               <img
@@ -51,6 +53,7 @@ function Intro() {
             animateIn="fadeInLeft"
             delay={1000}
             className="intro-icon__div"
+            animateOnce
           >
             <motion.a
               variants={iconVariant}
@@ -74,10 +77,11 @@ function Intro() {
 
         <div className="intro-contact__div">
           <ScrollAnimation
-            animateIn="fadeInDown"
+            animateIn="fadeInLeft"
             delay={2000}
             className="intro-contact__btn"
             offset={0}
+            animateOnce
           >
             <Link to="Contact" smooth offset={-82}>
               <Button text="Contact" type="action" img={<Send />} />

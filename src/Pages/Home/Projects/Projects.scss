@@ -9,6 +9,7 @@
   align-items: center;
   position: relative;
   // overflow: hidden;
+  margin: 5rem 0rem 0rem 0rem;
 
   > img {
     position: absolute;
@@ -24,6 +25,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .projects-container-outer {
+    margin: 15rem 0rem 0rem 0rem;
+  }
   .projects-container-inner {
     width: 100%;
     max-width: 82rem;
@@ -36,6 +40,7 @@
 
 @media only screen and (min-width: 1440px) {
   .projects-container-outer {
+    margin: 0rem 0rem 0rem 0rem;
     > img {
       left: 0;
       top: -20rem;

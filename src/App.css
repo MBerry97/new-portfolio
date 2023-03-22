@@ -30,7 +30,6 @@ body.dark-mode .p-test {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none;
 }
 
 html {

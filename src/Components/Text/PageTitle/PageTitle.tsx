@@ -8,7 +8,7 @@ type Props = {
 
 const PageTitle = ({ text }: Props) => {
   return (
-    <ScrollAnimation animateIn="fadeIn" duration={1}>
+    <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce>
       <h1 className="pageTitle">{text}</h1>
     </ScrollAnimation>
   );

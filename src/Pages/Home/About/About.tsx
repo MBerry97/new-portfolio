@@ -29,7 +29,11 @@ function About() {
     <section className="about-container-outer" id="About">
       <img src={aboutBgHand} alt="waving hand" />
       <PageTitle text="🧑🏻 About" />
-      <ScrollAnimation className="about-container-inner" animateIn="fadeInLeft">
+      <ScrollAnimation
+        className="about-container-inner"
+        animateIn="fadeInLeft"
+        animateOnce
+      >
         <span>Nice to meet you,</span>
         <span id="about-name__span">I am Matt Berry.</span>
         <p>
@@ -46,7 +50,11 @@ function About() {
         </p>
       </ScrollAnimation>
 
-      <ScrollAnimation className="about-skills__div" animateIn="fadeInLeft">
+      <ScrollAnimation
+        className="about-skills__div"
+        animateIn="fadeInLeft"
+        animateOnce
+      >
         <span>My experience includes but not limited to</span>
         <div>{renderSkills()}</div>
       </ScrollAnimation>
