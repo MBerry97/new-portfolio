@@ -56,7 +56,12 @@ function Contact() {
       <PageTitle text="💬 Lets talk..." />
       <div className="contact-form-container">
         <form onSubmit={(e) => handleSubmit(e)} ref={form}>
-          <ScrollAnimation animateIn="fadeIn" duration={1} delay={300}>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={1}
+            delay={300}
+            animateOnce
+          >
             <label htmlFor="name">
               Name
               <input
@@ -69,7 +74,12 @@ function Contact() {
               />
             </label>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" duration={1} delay={500}>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={1}
+            delay={500}
+            animateOnce
+          >
             <label htmlFor="email">
               Email
               <input
@@ -82,7 +92,12 @@ function Contact() {
               />
             </label>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" duration={1} delay={700}>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={1}
+            delay={700}
+            animateOnce
+          >
             <label htmlFor="message">
               Message
               <textarea
@@ -102,6 +117,7 @@ function Contact() {
             duration={1}
             delay={900}
             offset={50}
+            animateOnce
           >
             <Button
               type={isSent ? 'submitted' : 'action'}
