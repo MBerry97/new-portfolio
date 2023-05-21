@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import useScrollFromTop from 'Hooks/useScrollFromTop';
 
 import React from 'react';
@@ -52,9 +54,14 @@ function NavBar({ themeState }: Props) {
         }}
       >
         <div>
-          <Link className="logo" to="Home" smooth>
+          <button
+            className="logo"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            type="button"
+            style={{ backgroundColor: 'transparent' }}
+          >
             🏠
-          </Link>
+          </button>
           {/* <ThemeToggle /> */}
         </div>
 

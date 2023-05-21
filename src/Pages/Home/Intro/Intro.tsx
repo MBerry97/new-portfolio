@@ -11,6 +11,9 @@ import { Link } from 'react-scroll';
 import LinkedIn from 'Components/Icons/LinkedIn';
 import Github from 'Components/Icons/Github';
 import { motion } from 'framer-motion';
+import { Parallax } from 'react-scroll-parallax';
+import useScrollFromTop from 'Hooks/useScrollFromTop';
+import classNames from 'classnames';
 
 function Intro() {
   const iconVariant = {
@@ -21,73 +24,81 @@ function Intro() {
     },
   };
 
+  const scrollPosition = useScrollFromTop();
+
+  const showText = scrollPosition <= 200;
+
+  const section = classNames('intro-container-outer', {
+    fadeIn: showText,
+    fadeOut: !showText,
+  });
+
   return (
-    <section className="intro-container-outer" id="Home">
-      <img src={introBgImg} alt="blob bg" />
-      <div className="intro-container-inner">
-        <div className="intro-info__div">
-          <span>
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
-              Hi 👋,
-            </ScrollAnimation>
-          </span>
-          <span>
-            <ScrollAnimation animateIn="fadeInLeft" delay={500} animateOnce>
-              I am{' '}
-              <span className="intro-info__span-outline-black">Matthew</span>
-            </ScrollAnimation>
-          </span>
+    <Parallax translateY={[-200, 200]}>
+      <section className={section} id="Home">
+        <img src={introBgImg} alt="blob bg" />
+        <div className="intro-container-inner">
+          <div className="intro-info__div">
+            <span>
+              <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+                Hi 👋,
+              </ScrollAnimation>
+            </span>
+            <span>
+              <ScrollAnimation animateIn="fadeInLeft" delay={500} animateOnce>
+                I am <span>Matthew</span>
+              </ScrollAnimation>
+            </span>
 
-          <p>
-            <ScrollAnimation animateIn="fadeInLeft" delay={1000} animateOnce>
-              Frontend{' '}
-              <span className="intro-info__span-outline-blue">Developer</span>
-              <img
-                src={underLine}
-                alt="under line"
-                className="underLine__img"
-              />
-            </ScrollAnimation>
-          </p>
-          <ScrollAnimation
-            animateIn="fadeInLeft"
-            delay={1000}
-            className="intro-icon__div"
-            animateOnce
-          >
-            <motion.a
-              variants={iconVariant}
-              animate="animate"
-              href="https://www.linkedin.com/in/matthew-berry-a30629174/"
-              target="_blank"
+            <p>
+              <ScrollAnimation animateIn="fadeInLeft" delay={1000} animateOnce>
+                Frontend <span>Developer</span>
+                <img
+                  src={underLine}
+                  alt="under line"
+                  className="underLine__img"
+                />
+              </ScrollAnimation>
+            </p>
+            <ScrollAnimation
+              animateIn="fadeInLeft"
+              delay={1000}
+              className="intro-icon__div"
+              animateOnce
             >
-              <LinkedIn />
-            </motion.a>
+              <motion.a
+                variants={iconVariant}
+                animate="animate"
+                href="https://www.linkedin.com/in/matthew-berry-a30629174/"
+                target="_blank"
+              >
+                <LinkedIn />
+              </motion.a>
 
-            <motion.a
-              variants={iconVariant}
-              animate="animate"
-              href="https://github.com/MBerry97"
-              target="_blank"
+              <motion.a
+                variants={iconVariant}
+                animate="animate"
+                href="https://github.com/MBerry97"
+                target="_blank"
+              >
+                <Github />
+              </motion.a>
+            </ScrollAnimation>
+          </div>
+
+          <div className="intro-contact__div">
+            <ScrollAnimation
+              animateIn="fadeInLeft"
+              delay={2000}
+              className="intro-contact__btn"
+              offset={0}
+              animateOnce
             >
-              <Github />
-            </motion.a>
-          </ScrollAnimation>
-        </div>
-
-        <div className="intro-contact__div">
-          <ScrollAnimation
-            animateIn="fadeInLeft"
-            delay={2000}
-            className="intro-contact__btn"
-            offset={0}
-            animateOnce
-          >
-            <Link to="Contact" smooth offset={-82}>
-              <Button text="Contact" type="action" img={<Send />} />
-            </Link>
-          </ScrollAnimation>
-          {/* <ScrollAnimation
+              <Link to="Contact" smooth offset={-82}>
+                <Button text="Contact" type="action" img={<Send />} />
+              </Link>
+            </ScrollAnimation>
+            {/* <ScrollAnimation
             animateIn="fadeInDown"
             delay={2000}
             className="intro__img"
@@ -95,9 +106,10 @@ function Intro() {
           >
             <img src={meIntro} alt="me" />
           </ScrollAnimation> */}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Parallax>
   );
 }
 

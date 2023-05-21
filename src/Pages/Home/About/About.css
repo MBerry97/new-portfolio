@@ -1,3 +1,31 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+.fadeOut {
+  opacity: 0;
+  animation: fadeOut 1s;
+}
+
 .about-container-outer {
   display: flex;
   flex-direction: column;
@@ -5,6 +33,7 @@
   text-align: center;
   position: relative;
   padding: 2rem 0rem 0rem 0rem;
+  background-color: #f3f3f3;
 }
 
 .about-container-outer > h1 {
@@ -35,13 +64,14 @@
 }
 
 .about-container-inner > span {
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-weight: 600;
+  font-size: 2.4rem;
   font-family: "Mulish", sans-serif;
   margin: 0.5rem 0rem;
 }
 
 .about-container-inner > span:first-of-type {
+  font-weight: 700;
   color: black;
   transition: color 1s;
 }
@@ -54,6 +84,8 @@
 .about-container-inner > img {
   margin: 1rem 0rem;
   filter: brightness(110%);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .about-skills__div {

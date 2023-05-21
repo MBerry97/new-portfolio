@@ -53,7 +53,7 @@ function Contact() {
   return (
     <section className="contact-container-outer" id="Contact">
       <img id="contact-hand" src={handMobileImg} alt="pointing hand" />
-      <PageTitle text="💬 Lets talk..." />
+      <PageTitle text="💬" />
       <div className="contact-form-container">
         <form onSubmit={(e) => handleSubmit(e)} ref={form}>
           <ScrollAnimation

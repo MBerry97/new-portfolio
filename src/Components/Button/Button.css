@@ -1,3 +1,31 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+.fadeOut {
+  opacity: 0;
+  animation: fadeOut 1s;
+}
+
 .button-action,
 .button-info,
 .button-submitted {
@@ -28,6 +56,7 @@
   border-bottom: 0.3rem solid #5784f9;
   display: flex;
   align-items: center;
+  border-radius: 0.4rem;
   font-weight: 700;
 }
 

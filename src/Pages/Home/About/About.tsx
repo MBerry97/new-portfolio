@@ -28,18 +28,18 @@ function About() {
   return (
     <section className="about-container-outer" id="About">
       <img src={aboutBgHand} alt="waving hand" />
-      <PageTitle text="🧑🏻 About" />
+      <PageTitle text="🧑🏻" />
       <ScrollAnimation
         className="about-container-inner"
         animateIn="fadeInLeft"
         animateOnce
       >
-        <span>Nice to meet you,</span>
+        <span>Welcome to my portfolio,</span>
         <span id="about-name__span">I am Matt Berry.</span>
         <p>
-          Working full time in React, Typescript and SCSS, building the front
-          end of a communication platform and aiding with innovative technical
-          solutions for various forms of remote communication.
+          Working full time in React, Typescript and SCSS, currently building
+          the front end of a communication platform and aiding with innovative
+          technical solutions for various forms of remote communication.
         </p>
         <img src={aboutImg} alt="me" />
 
