@@ -9,6 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function About() {
   const skills = [
     'React',
+    'Next',
     'TypeScript',
     'JavaScript',
     'HTML',

@@ -26,7 +26,7 @@ function Intro() {
 
   const scrollPosition = useScrollFromTop();
 
-  const showText = scrollPosition <= 200;
+  const showText = scrollPosition <= 150;
 
   const section = classNames('intro-container-outer', {
     fadeIn: showText,
@@ -34,7 +34,7 @@ function Intro() {
   });
 
   return (
-    <Parallax translateY={[-200, 200]}>
+    <Parallax>
       <section className={section} id="Home">
         <img src={introBgImg} alt="blob bg" />
         <div className="intro-container-inner">
@@ -52,7 +52,7 @@ function Intro() {
 
             <p>
               <ScrollAnimation animateIn="fadeInLeft" delay={1000} animateOnce>
-                Frontend <span>Developer</span>
+                Software <span>Engineer</span>
                 <img
                   src={underLine}
                   alt="under line"
