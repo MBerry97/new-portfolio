@@ -16,14 +16,14 @@ const Projects = () => {
       <div className="projects-container-inner">
         <ProjectCard
           img={lixuImg}
-          buttonText={['Next', 'React', 'TypeScript', 'SCSS']}
+          buttonText={['Next', 'TypeScript', 'SCSS']}
           projectDesc="A modern, sleek website for a digital agency, featuring a responsive design and a intuitive UI to drive client engagement and branding. All rigorously tested for a smooth performance across various devices and browsers."
           demoLink="https://lixu.digital"
           title="Lixu Digital"
         />
         <ProjectCard
           img={atkinsonImg}
-          buttonText={['Next', 'React', 'TypeScript', 'SCSS']}
+          buttonText={['Next', 'TypeScript', 'Tailwind']}
           projectDesc="A webstie build for a civil engineering company, featuring a robust, user-friendly interface. Highlights include company information, detailed service descriptions, and real work examples. A seamless experience for showcasing their expertise and facilitating client connections."
           demoLink="https://atkinsoncivils.co.uk"
           title="Atkinson Civil Engineering"
