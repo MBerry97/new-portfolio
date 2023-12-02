@@ -28,20 +28,6 @@ const Projects = () => {
           demoLink="https://atkinsoncivils.co.uk"
           title="Atkinson Civil Engineering"
         />
-        <ProjectCard
-          img={shortlyUrlImg}
-          buttonText={['React', 'HTML', 'CSS', 'Git']}
-          projectDesc="A personal project built towards a professional design. Intergrating with an API it allows you to shorten any link. Built in React, HTML, CSS and tested with React testing library."
-          demoLink="https://url-shortner.netlify.app"
-          title="Shortly URL landing page"
-        />
-        <ProjectCard
-          img={sneakerImg}
-          buttonText={['React', 'TypeScript', 'HTML', 'SCSS', 'Git']}
-          projectDesc="A personal project where you can inspect the product in multiple views and add your specified quantity to the cart. Built in React, TypeScript, HTML, Sass and tested with React testing library."
-          demoLink="https://sneaker-product-page.netlify.app"
-          title="Sneakers checkout"
-        />
       </div>
     </section>
   );
