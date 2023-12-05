@@ -1,5 +1,6 @@
 import ProjectCard from 'Components/ProjectCard/ProjectCard';
 import React from 'react';
+import './Projects.css';
 import lixuImg from 'Assets/projects/lixu-preview.png';
 import atkinsonImg from 'Assets/projects/atkinson-preview.png';
 import PageTitle from 'Components/Text/PageTitle/PageTitle';
